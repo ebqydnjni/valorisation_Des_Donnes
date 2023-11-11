@@ -1,0 +1,25 @@
+import mysql.connector as MC
+from tabulate import tabulate  
+try:
+    conn = MC.connect(host='localhost', database='ecommerce', user='root', password='')
+
+    cursor = conn.cursor()
+    # Récupérer les 20 premières lignes de la table villes
+    cursor.execute("SELECT * FROM villes LIMIT 20")
+    data = cursor.fetchall()
+
+    # Liste des noms de colonnes
+    column_names = [i[0] for i in cursor.description]
+
+    # Utilisez tabulate pour afficher les données sous forme de tableau
+    table = tabulate(data, headers=column_names, tablefmt="grid")
+
+    print(table)
+
+except MC.Error as err:
+    print("[ERREUR]", err)
+
+finally:
+    if 'conn' in locals() and conn.is_connected():
+        cursor.close()
+        conn.close()
