@@ -1,0 +1,11 @@
+-- Contraintes d'intégrité pour la table Clients
+
+# ON MODIFIE LA COLONE IDCOMMANDE
+ALTER TABLE commande MODIFY idcommande iNT AUTO_INCREMENT;
+
+ALTER TABLE lignecommande MODIFY idCommande INT AUTO_INCREMENT;
+
+##
+ALTER TABLE PRODUITS MODIFY idProduits INT AUTO_INCREMENT;
+
+ALTER TABLE Categories MODIFY idCategories INT AUTO_INCREMENT;
