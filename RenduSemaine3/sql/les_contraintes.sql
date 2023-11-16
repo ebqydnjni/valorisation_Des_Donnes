@@ -1,4 +1,3 @@
--- Contraintes d'intégrité pour la table Clients
 
 # ON MODIFIE LA COLONE IDCOMMANDE
 ALTER TABLE commande MODIFY idcommande iNT AUTO_INCREMENT;

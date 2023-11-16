@@ -25,7 +25,7 @@ for client in clients:
         status = random.choice(statuses)
         
         cursor.execute("INSERT INTO Commandes (dateCommande, statut, idClient) VALUES (%s, %s, %s)",
-                       (random_date.strftime('%Y-%m-%d'), status, client[0]))
+        (random_date.strftime('%Y-%m-%d'), status, client[0]))
 
 conn.commit()
 conn.close()
