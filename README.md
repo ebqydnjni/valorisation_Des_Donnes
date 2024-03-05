@@ -1,13 +1,4 @@
-# ProjetVisualisationDonnees
-
-DérouléProjetEcommerceDakar2023-24
-Déroulé du projet ecommerce
-
-vidéo de présentation du projet complet : https://youtu.be/HL15zD-kppc 
-
-
-
-
+## PROJET VALORISATION DES DONNES 
 Semaine 1
 
 vidéo de présentation du programme de la semaine 1 : https://youtu.be/MOWrK_M2xxs 
@@ -386,5 +377,3 @@ semaine du 13/2/2024
 soutenance finale des projets
 
 
-#   v a l o r i s a t i o n _ D e s _ D o n n e s  
- 
